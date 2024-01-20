@@ -1,40 +1,41 @@
 // Se esta declarando la función Math que es constante y es un objeto.
 const Math = {}; 
 
-/*se está declarando la función add y se está diciendo que se ejecutara entre dos parámetros a y b.
-En la siguiente línea se está solicitando que muestre el resultado de la suma entre a y b. Y en la última se da cierre.*/
+//Se declara la función add y que tiene dos parámetros a y b.
 function add(a,b) { 
+    //Se retorna el resultado de la suma entre a y b.
     return a + b;
 }
 
-/*se está declarando la función substract y se declara que se realizara entre dos parámetros que son a y b.
-En la siguiente línea se está pidiendo que muestre el resultado de la operación restar entre los parámetros 
-a y b. En la última se da cierre.*/
+//Se declara la función substract y que tiene dos parámetros a y b.
 function substract(a,b) { 
+    //Se retorna el resultado de la resta entre a y b.
     return a - b;
 }
 
-/* se declara la función multiply y se estará realizando con los parámetros a y b. En la tercera línea se está 
-solicitando que muestre el resultado de la multiplicación entre a y b. En la última se da cierre. */
+//Se declara la función multiply y que tiene dos parámetros a y b.
 function multiply(a,b) { 
+    //Se retorna el resultado de la multiplicación entre a y b.
     return a * b;
 }
 
-/*se declara la función divide que se estará realizando entre los parámetros a y b. En la siguiente línea 
-se esta declarando una condición en la que se está especificando que si tanto a como b son iguales a 0
-se mostrara un mensaje que indique que hay un error ya que no es posible dividir entre cero. En la siguiente
-línea se está indicando que si b es igual a cero también se generara un mensaje de error, en la siguiente
-linea se pide que al no cumplirse ninguna de las dos condiciones anteriores se podrá ejecutar la operación 
-de manera normal, es decir la división entre los dos parámetros a y b. En la última se da cierre al código.*/
+//Se declara la función divide y que tiene dos parámetros a y b.
 function divide(a,b) {
+    //Se utiliza el condicional if para verificar el valor de a y b, si a y b son iguales a 0
     if (b == 0 && a == 0) {
+        //Se retorna un mensaje indicando que no se puede dividir entre 0
         return "Error: no se puede dividir entre cero"
+    //Y si b es igual a 0
     } else if (b == 0) {
+        //Se retorna un mensaje indicando que no se puede dividir entre 0
         return "Error: no se puede dividir entre cero" 
     }
+        /*Si no se cumple ninguna de las dos condiciones anteriores, se retorna el resultado de la división entre
+        a y b.*/
         return a / b;
     }
 
+//Se agregan las funciones al objeto math
 Math.add = add;
 Math.substract = substract;
 Math.multiply = multiply;
